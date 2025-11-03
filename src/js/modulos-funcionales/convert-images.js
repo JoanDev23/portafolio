@@ -10,11 +10,11 @@ if (!fs.existsSync(outputDir)) {
   fs.mkdirSync(outputDir, { recursive: true });
 }
 
-// Leer todos los archivos PNG
+// Leer todos los archivos PNG y JPG
 fs.readdirSync(inputDir).forEach(file => {
-  if (path.extname(file).toLowerCase() === '.png') {
+  if (path.extname(file).toLowerCase() === '.png' || path.extname(file).toLowerCase() === '.jpg') {
     const inputPath = path.join(inputDir, file);
-    const basename = path.basename(file, '.png');
+    const basename = path.basename(file, path.extname(file));
 
 
     const webpFile = basename + '.webp';
@@ -37,8 +37,16 @@ fs.readdirSync(inputDir).forEach(file => {
       .toFile(avifPath)
       .then(() => console.log(`Convertido a AVIF: ${file} → ${avifFile}`))
       .catch(err => console.error(`Error con AVIF ${file}:`, err));
+
+    // --- 3. COPIAR IMAGEN ORIGINAL COMO FALLBACK ---
+    const fallbackPath = path.join(outputDir, file);
+    fs.copyFile(inputPath, fallbackPath, (err) => {
+      if (err) {
+        console.error(`Error al copiar el fallback de ${file}:`, err);
+        return;
+      }
+      console.log(`Fallback copiado: ${file}`);
+    });
   }
 });
-
-//convertir imagenes de png a avif
 

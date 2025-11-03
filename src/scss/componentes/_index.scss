@@ -1,16 +1,9 @@
 // Índice de componentes UI del portafolio DAW
 // Centraliza todos los componentes reutilizables siguiendo arquitectura modular
-
-@forward 'navegacion_header';        // Componente de navegación principal del header
-@forward 'main_portafolio';         // Estilos principales del portafolio
-@forward 'header_inicio';         // Estilos específicos para la sección de inicio
-@forward 'imagen_portafolio';         // Estilos para imágenes del portafolio
-@forward 'sobre_mi';                  // Componente "Sobre Mí" en la sección de inicio
-@forward 'sobre_mi_presentacion';   // Presentación personal en "Sobre Mí"
-@forward '_contenido_sobre_mi';   // Contenidos dentro de "Sobre Mí"
-@forward 'botones_principales';    // Botones CTA y elementos interactivos (pendiente)
+@forward 'seccion_main';         // Estilos principales del portafolio
+@forward 'header';         // Estilos específicos para la sección de inicio
 @forward 'habilidades_tecnicas'; // Sección de habilidades técnicas
-@forward 'iconos_tecnologias';   // Iconos representativos de tecnologías
 @forward 'project_section';      // Sección de proyectos destacados
+@forward 'blog';                 // Componente de blog y artículos
 // @forward 'tarjetas_proyecto';      // Cards para mostrar proyectos (pendiente)
 // @forward 'formulario_contacto';    // Formulario de contacto (pendiente)

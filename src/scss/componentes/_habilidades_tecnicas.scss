@@ -3,7 +3,7 @@
 
 .habilidades-tecnicas {
     padding: .5rem;
-    background-color: v.$color-secundario;
+    background-color: v.$primary-color;
     border-radius: 10px;
 
     
@@ -12,8 +12,8 @@
 .texto-habilidades {
     font-family: f.$fuente-roboto;
     font-weight: 300;
-    color: v.$color-texto-principal;
-    background-color: v.$color-primario;
+    color: v.$primary-color;
+    background-color: v.$primary-color;
     margin: 0 7rem;
     margin-top: 1rem;
     border-radius: 10px;
@@ -29,7 +29,7 @@
     margin: 0;
     margin-top: 1rem;
 
-    color: v.$color-texto-principal;
+    color: v.$primary-color;
 }
 
 // Estilos para la descripción de la experiencia (utilidad general )
@@ -43,5 +43,5 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
 
-    color: v.$color-texto;
+    color: v.$accent-color;
 }

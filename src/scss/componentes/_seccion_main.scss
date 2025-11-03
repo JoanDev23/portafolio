@@ -1,0 +1,11 @@
+
+@use '../variables/colores_variables' as c;
+@use '../variables/fonts' as f;
+
+.main {
+    background-color: c.$background-color;
+
+    .main-sobre-mi {
+        background-color: c.$primary-color;
+    }
+}

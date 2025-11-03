@@ -1,0 +1,36 @@
+@use '../variables/fonts' as f;
+@use '../variables/colores_variables' as v;
+
+.header {
+    background-color: v.$primary-color;
+    padding: .6rem;
+
+    .header-barra{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        .header-titulo {
+            margin: 0;
+            text-align: center;
+            font-size: 2.5rem;
+        }
+    }
+
+    .header-barra-navegacion {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 1rem;
+
+        a {
+            text-decoration: none;
+            font-family: f.$fuente-roboto;
+            color: v.$text-color;
+            font-size: 1.5rem;
+        }
+    }
+}
