@@ -25,10 +25,19 @@ function css() {
         .pipe(dest('build/css'));
 }
 
-// Tarea para observar cambios en archivos SCSS
-function watchFiles() {
-    watch('src/scss/**/*.scss', css);
+//css DEV
+function cssDev() {
+    return src('src/scss/app.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(dest('build/css'));
 }
 
-export {css as build};
-export {css, watchFiles as dev};
+// Tarea para observar cambios en archivos SCSS
+function watchFiles() {
+    watch('src/scss/**/*.scss', series(cssDev, css)); //observa cambios y ejecuta la tarea cssDev y css
+}
+
+// Exportar tareas
+export const prod = series(cssDev, css); //tarea por defecto
+export const dev = series(cssDev, watchFiles); //tarea de desarrollo con watch
+export default dev;

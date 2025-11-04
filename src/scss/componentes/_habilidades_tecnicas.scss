@@ -2,46 +2,6 @@
 @use '../variables/colores_variables' as v;
 
 .habilidades-tecnicas {
-    padding: .5rem;
-    background-color: v.$primary-color;
-    border-radius: 10px;
-
+    background-color: v.$primary-color
     
-}
-
-.texto-habilidades {
-    font-family: f.$fuente-roboto;
-    font-weight: 300;
-    color: v.$primary-color;
-    background-color: v.$primary-color;
-    margin: 0 7rem;
-    margin-top: 1rem;
-    border-radius: 10px;
-}
-
-// Estilos para los títulos de las habilidades técnicas (utilidad general )
-.stack {
-    font-family: f.$fuente-roboto;
-    font-weight: 500;
-    font-size: 2rem;
-    font-style: normal;
-    line-height: 1.2;
-    margin: 0;
-    margin-top: 1rem;
-
-    color: v.$primary-color;
-}
-
-// Estilos para la descripción de la experiencia (utilidad general )
-.mi-experiencia {
-    font-family: f.$fuente-roboto;
-    font-weight: 400;
-    font-size: 1.2rem;
-    font-style: normal;
-    line-height: 1.5;
-    margin: 0;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-
-    color: v.$accent-color;
 }

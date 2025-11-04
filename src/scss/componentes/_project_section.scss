@@ -2,7 +2,7 @@
 @use '../variables/colores_variables' as v;
 
 .portafolio-proyectos {
-    background-color: v.$background-color;
+    background-color: v.$primary-color;
     padding: 1rem;
     border-radius: 10px;
 }
@@ -38,7 +38,7 @@
 }
 
 .proyecto-card {
-    background-color: v.$background-color;
+    background-color: v.$primary-color;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
