@@ -1,108 +1,63 @@
 @use '../variables/fonts' as f;
 @use '../variables/colores_variables' as v;
 
-.portafolio-proyectos {
+.proyectos {
     background-color: v.$primary-color;
     padding: 1rem;
-    border-radius: 10px;
-}
 
-.texto-proyecto {
-    font-family: f.$fuente-roboto;
-    font-weight: 500;
-    font-size: 2.5rem;
-    font-style: normal;
-    line-height: 1.2;
-    margin: 0;
-
-    color: v.$primary-color
-}
-
-.descripcion {
-    font-family: f.$fuente-roboto;
-    font-weight: 400;
-    font-size: 1.2rem;
-    font-style: normal;
-    line-height: 1.5;
-    margin: 0;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-
-    color: v.$accent-color;
-}
-
-.grid-proyectos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-}
-
-.proyecto-card {
-    background-color: v.$primary-color;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.proyecto-imagen {
-  width: 100%;
-  height: 245px;
-  border-radius: 15px 15px 0 0;
-  overflow: hidden;
-}
-
-.proyecto-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 1rem;
-    
-    
-    padding: 1rem;
-
-    h4 {
-        font-family: f.$fuente-roboto;
-        font-weight: 600;
-    }
-
-    p {
+    .proyecto-titulo {
+        text-align: center;
         margin: 0;
-        font-family: f.$fuente-principal;
-        color: v.$primary-color;
-
     }
+
 }
-.btn-proyecto {
-    background-color: v.$primary-color;
-    width: 95%;
-    text-align: center;
-    padding: .4rem;
-    border-radius: 7px;
+.proyecto-header {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    gap: 1rem;
 
-    // Estilos del enlace dentro del botón
-    a {
-        color: v.$primary-color;
-        text-decoration: none;
-        font-family: f.$fuente-roboto;
-        font-size: 1.2rem;
+    
+}
+.proyecto-card {
+    background-color: v.$background-card;
+    padding: .5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+
+    .proyecto-imagen {
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        height: auto;
     }
 
-    &:hover {
+    .proyecto-btn {
+        width: 85%;
+        margin: 1rem auto 0 auto;
+        text-align: center;
+        padding: .5rem;
         background-color: v.$accent-color;
+        border-radius: 10px;
+
 
         a {
+            
             color: v.$primary-color;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+
+            &:hover {
+                background-color: darken(v.$accent-color, 10%);
+            }    
         }
     }
 
-    
-    
-}
-
-.proyecto-info-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    font-size: 1.5rem;
-    margin: 0;
+    h2 {
+        margin: 0;
+        padding: .7rem;
+        margin-bottom: .5rem;
+    }
 }
