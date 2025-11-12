@@ -23,23 +23,23 @@
 </head>
 <body>
     <!-- Header Section -->
-    <header class="header center-sections">
+    <header id="header" class="header center-sections">
         <div class="header-barra">
             <h1 class="header-titulo">Joan Jimenez - Portafolio DAW</h1>
 
             <nav class="header-barra-navegacion">
-                <a href="#">Inicio</a>
-                <a href="#">Sobre Mi</a>
-                <a href="#">Proyectos</a>
-                <a href="#">Blog</a>
-                <a href="#">Contacto</a>
+                <a href="index.html">Inicio</a>
+                <a href="#sobre-mi">Sobre Mi</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#contacto">Contacto</a>
             </nav>
 
         </div>
     </header>
 
     <!-- Main Portafolio Section -->
-    <main class="main center-sections">
+    <main id="sobre-mi" class="main center-sections">
 
         <!-- Imagen de Portada -->
         <picture>
@@ -82,7 +82,7 @@
     </main>
 
     <!-- Habilidades Técnicas Section -->
-    <div class="habilidades-tecnicas center-sections">
+    <div id="habilidades" class="habilidades-tecnicas center-sections">
         <h2>Habilidades</h2>
         <!--frontend-->
         <div class="card">
@@ -160,7 +160,7 @@
     </div>
 
     <!-- Proyectos Section -->
-    <div class="proyectos center-sections">
+    <div id="proyectos" class="proyectos center-sections">
         <h2 class="proyecto-titulo">Proyectos Destacados</h2>
         <p>A continuación, te presento una selección de mis proyectos más destacados, que reflejan mi crecimiento y habilidades en el desarrollo web.</p>
 
@@ -169,7 +169,7 @@
             <!--proyecto e-comerce-->
             <div class="proyecto-card">
 
-                <h2>Proyecto 1</h2>
+                <h2 class="proyecto-card-titulo">Proyecto 1</h2>
                 <!-- Usando picture para formatos de imagen optimizados -->
                 <picture>
                     <!-- Fuentes de imagen en diferentes formatos -->
@@ -183,8 +183,8 @@
                     height="300">
                 </picture>
 
-                <p class="proyecto-descripcion">Proyecto 1: Sitio Web Personal</p>
-                <p class="proyecto-descripcion">Desarrollé una API REST optimizada con Node.js y PostgreSQL, resultando en una reducción del 40% en latencia y escalabilidad para 100k usuarios.</p>
+                <p class="proyecto-sub-titulo">Proyecto 1: Sitio Web Personal</p>
+                <p>Desarrollé una API REST optimizada con Node.js y PostgreSQL, resultando en una reducción del 40% en latencia y escalabilidad para 100k usuarios.</p>
 
                 <div class="proyecto-btn">
                     <a href="#">Ver Proyecto</a>
@@ -194,34 +194,38 @@
 
             <!--proyecto aplicaciones web-->
             <div class="proyecto-card">
+
+                <h2 class="proyecto-card-titulo">Proyecto 2</h2>
                 <!-- Usando picture para formatos de imagen optimizados -->
                 <picture>
                     <!-- Fuentes de imagen en diferentes formatos -->
-                    <source srcset="build/imagenes/web-developer.avif" type="image/avif">
-                    <source srcset="build/imagenes/web-developer.webp" type="webp">
+                    <source srcset="build/imagenes/arquitectura-limpias.avif" type="image/avif">
+                    <source srcset="build/imagenes/arquitectura-limpias.webp" type="webp">
 
-                    <img src="build/imagenes/web-developer.jpg" alt="vista previa del proyecto e-comerce"
+                    <img src="build/imagenes/arquitectura-limpias.jpg" alt="vista previa del proyecto e-comerce"
                     class="proyecto-imagen"
                     loading="lazy"
                     width="400"
                     height="300">
                 </picture>
 
-                <p>Proyecto 1: Sitio Web Personal</p>
+                <p class="proyecto-sub-titulo">Proyecto 2: Sitio Web Personal</p>
                 <p>Desarrollé una API REST optimizada con Node.js y PostgreSQL, resultando en una reducción del 40% en latencia y escalabilidad para 100k usuarios.</p>
 
-                <div class="btn-proyecto">
+                <div class="proyecto-btn">
                     <a href="#">Ver Proyecto</a>
                 </div>
+                
             </div>
-            <div class="proyecto-card">
-                <!-- Usando picture para formatos de imagen optimizados -->
 
-                <!--proyecto dashboard-->
+            <div class="proyecto-card">
+
+                <h2 class="proyecto-card-titulo">Proyecto 3</h2>
+                <!-- Usando picture para formatos de imagen optimizados -->
                 <picture>
                     <!-- Fuentes de imagen en diferentes formatos -->
                     <source srcset="build/imagenes/dashboard.avif" type="image/avif">
-                    <source srcset="build/imagenes/dashboard.webp" type="webp">
+                    <source srcset="build/imagenes/dashboard.webb" type="webp">
 
                     <img src="build/imagenes/dashboard.jpg" alt="vista previa del proyecto e-comerce"
                     class="proyecto-imagen"
@@ -230,33 +234,30 @@
                     height="300">
                 </picture>
 
-                <p>Proyecto 1: Sitio Web Personal</p>
+                <p class="proyecto-sub-titulo">Proyecto 3: Sitio Web Personal</p>
                 <p>Desarrollé una API REST optimizada con Node.js y PostgreSQL, resultando en una reducción del 40% en latencia y escalabilidad para 100k usuarios.</p>
 
-                <div class="btn-proyecto">
+                <div class="proyecto-btn">
                     <a href="#">Ver Proyecto</a>
                 </div>
+                
             </div>
+            
         </div>
 
     </div>
 
-    <!-- Blog Section -->
-    <section class="blog-grid center-sections">
-        
-    </section>
-
     <!-- Contacto Section -->
-    <div class="contacto">
-        <h3>Contacto</h3>
-        <h1>Contacto: Estoy Aquí para Ayudarte</h1>
-        <p>Si tienes alguna pregunta, proyecto en mente o simplemente quieres saludar, no dudes en contactarme. Estoy siempre abierto a nuevas oportunidades y colaboraciones.</p>
-        <a href="contacto.html" class="boton-cta">Contáctame</a>
+    <div id="contacto" class="contacto center-sections">
+        <h2>Si tienes alguna pregunta, proyecto en mente o simplemente quieres saludar, no dudes en contactarme. </h2>
+        <p>Estoy siempre abierto a nuevas oportunidades y colaboraciones.</p>
+
+        <button class="btn-contacto">Contáctame</button>
 
     </div>
 
-    <footer class="footer-portafolio">
-        <p>&copy; 2024 Joan - Portafolio DAW</p>
+    <footer class="footer">
+        <p>DevFolio: 2025 Joan Jimenez. Todos los derechos reservados.</p>
     </footer>
 
 </body>

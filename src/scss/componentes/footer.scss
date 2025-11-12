@@ -1,0 +1,17 @@
+
+@use '../variables/colores_variables' as colors;
+@use '../variables/fonts' as font;
+
+.footer {
+    background-color: colors.$footer-background;
+    color: colors.$text-footer-color;
+    text-align: center;
+    padding: 1rem;
+    font-family: font.$fuente-roboto;
+
+    p {
+        margin: 0;
+        font-size: 1rem;
+    }
+
+}
