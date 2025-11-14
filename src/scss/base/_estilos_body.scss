@@ -4,5 +4,10 @@
 
 // Estilos base del body - establecemos una base limpia y consistente
 // Usamos variables para facilitar cambios futuros de tema
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
 }

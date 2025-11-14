@@ -12,12 +12,27 @@
         flex-direction: column;
         align-items: center;
 
-        h3, p{
+        h2{
+            margin: 0;
+            margin-bottom: .5rem;
+        }
+        p {
+            font-family: f.$fuente-roboto;
+            color: c.$secondary-text-color;
+            font-weight: 450;
             margin: 0;
         }
-        h3 {
-            margin-bottom: 1rem;
-        }
+
+    }
+
+    .main-imagen-sobre-mi {
+        max-width: 100%;
+        height: auto;
+        border-radius: 15px;
+
+        object-fit: cover;
+
+        box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.255);
 
     }
 }

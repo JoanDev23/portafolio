@@ -1,0 +1,8 @@
+
+@use '../variables/colores_variables' as v;
+@use '../variables/fonts' as f;
+
+.blog {
+    
+    background-color: v.$color-primario;
+}

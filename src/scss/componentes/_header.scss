@@ -1,6 +1,11 @@
 @use '../variables/fonts' as f;
 @use '../variables/colores_variables' as v;
 
+// Animaciones CSS
+
+// Tracking In Expand para el título del header
+@keyframes tracking-in-expand{0%{letter-spacing:-.2em;opacity:0}40%{opacity:.6}100%{opacity:1}}
+
 .header {
     background-color: v.$primary-color;
     padding: .6rem;
@@ -15,7 +20,9 @@
             margin: 0;
             text-align: center;
             font-size: 2.5rem;
-            font-family: f.$fuente-principal;
+            font-family: f.$fuente-open-sans;
+            
+            animation: tracking-in-expand 2s linear both;
         }
     }
 
