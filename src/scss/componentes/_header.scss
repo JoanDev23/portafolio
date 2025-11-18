@@ -1,5 +1,6 @@
 @use '../variables/fonts' as f;
 @use '../variables/colores_variables' as v;
+@use '../variables/breakpoints_responsive' as r;
 
 // Animaciones CSS
 
@@ -15,6 +16,8 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+
+        
 
         .header-titulo {
             margin: 0;

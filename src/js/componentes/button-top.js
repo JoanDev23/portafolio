@@ -5,7 +5,7 @@ export function buttonTop() {
 
         // Mostrar u ocultar el botón según la posición del scroll
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 300) {
+            if (window.scrollY > 1800) {
                 btn.style.display = 'block';
             } else {
                 btn.style.display = 'none';
