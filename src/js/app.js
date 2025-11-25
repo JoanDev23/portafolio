@@ -1,4 +1,5 @@
 
+
 //importar archivos desde componentes js
 import { buttonTop } from './componentes/ButtonTop.js';
 import { buttonDown } from './componentes/ButtonDown.js';
@@ -9,3 +10,4 @@ import { buttonChangeBg } from './componentes/ButtonChangeBg.js';
 buttonTop();
 buttonDown();
 navBarScroll();
+buttonChangeBg();
