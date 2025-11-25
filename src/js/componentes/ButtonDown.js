@@ -18,7 +18,7 @@ export function buttonDown() {
 
             // Mostrar botón solo cuando el usuario ha scrolleado lo suficiente (300px) y no está al final
             // Esto mejora UX evitando el botón cuando no hay más contenido abajo
-            if (scrollTop >= 300 && scrollTop + windowHeight < documentHeight) {
+            if (window.scrollY > 950 && window.scrollY < documentHeight - windowHeight - 20) {
                 btnDown.style.display = 'block';
             } else {
                 btnDown.style.display = 'none';

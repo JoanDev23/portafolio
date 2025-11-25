@@ -44,6 +44,8 @@
             &.is-fixed {
                 position: fixed;
                 top: 0;
+                left: 0;
+                right: 0;
                 z-index: 1000;
                 
                 width: 100%;
@@ -57,10 +59,8 @@
                     inset 0 -1px 0 rgba(255, 255, 255, 0.1),
                     inset 0 0 60px 30px rgba(255, 255, 255, 3);
 
-                padding: 1rem 0;
-                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-                
                 padding: 1rem;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
                 flex-direction: row;
 
@@ -83,4 +83,9 @@
             font-size: 1.5rem;
         }
     }
+}
+
+// Compensar el espacio cuando la barra está fija para evitar el "salto"
+body.nav-fixed {
+    padding-top: 14rem;
 }

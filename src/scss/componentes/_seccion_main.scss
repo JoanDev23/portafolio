@@ -3,7 +3,7 @@
 @use '../variables/fonts' as f;
 
 .main {
-
+    scroll-margin-top: 4rem;
     .main-sobre-mi {
         background-color: c.$primary-color;
         padding: .2rem 1rem;
