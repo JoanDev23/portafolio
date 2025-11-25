@@ -24,6 +24,7 @@
             text-align: center;
             font-size: 2.5rem;
             font-family: f.$fuente-open-sans;
+            margin-bottom: 1rem;
             
             animation: tracking-in-expand 2s linear both;
         }
@@ -35,7 +36,45 @@
         justify-content: space-between;
         align-items: center;
         gap: 1rem;
-        margin-top: 1rem;
+        margin-bottom: 1rem;
+        transition: all 0.5s ease;
+
+        @include r.mobile-only {
+            
+            &.is-fixed {
+                position: fixed;
+                top: 0;
+                z-index: 1000;
+                
+                width: 100%;
+                background: rgba(255, 255, 255, 0.25);
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                box-shadow: 
+                    0 8px 32px rgba(0, 0, 0, 0.1),
+                    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+                    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+                    inset 0 0 60px 30px rgba(255, 255, 255, 3);
+
+                padding: 1rem 0;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                
+                padding: 1rem;
+
+                flex-direction: row;
+
+                .hide-scroll {
+                    display: none;
+                }
+
+                a {
+                    font-size: 1.2rem;
+                }
+            }
+            
+            
+        }
 
         a {
             text-decoration: none;
